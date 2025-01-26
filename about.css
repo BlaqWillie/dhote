@@ -1,0 +1,58 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: row;
+}
+
+
+
+.about-info {
+    max-width: 500px;
+    flex: 1;
+}
+
+.about-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.about-picture img {
+    border-radius: 8px;
+    max-width: 800px;
+    height: auto;
+    flex: 1;
+}
+
+
+  @media (max-width: 768px) {
+    .navbar .logo{
+        font-size: medium;
+        font-weight: bolder;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .about-picture {
+        order: 2; /* Move the image to the bottom */
+    }
+
+    .about-info {
+        order: 1; /* Keep the text at the top */
+    }
+}
+
+ 
